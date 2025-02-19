@@ -27,3 +27,34 @@ This script automatically organizes files on your desktop by sorting them into f
 3. Navigate to the script's directory:
    ```bash
    cd path/to/script
+   python organize_desktop.py
+   
+## ⚙️ How It Works
+
+- 🖥️ The script retrieves the user's desktop path.
+- 📜 It scans for files (ignoring directories).
+- 🔖 It extracts file extensions and groups files into corresponding folders.
+- 📁 If a folder for a specific extension doesn’t exist, it creates one.
+- 🔄 Files are moved into their respective folders.
+
+## 📝 Example
+
+### **Before running the script:**
+```plaintext
+Desktop/
+  document.pdf
+  image.jpg
+  script.py
+  notes.txt
+
+### **After running the script:**
+```plaintext
+Desktop/
+  pdf_files/
+    document.pdf
+  jpg_files/
+    image.jpg
+  py_files/
+    script.py
+  txt_files/
+    notes.txt
